@@ -62,7 +62,7 @@ From part one (WeatherPy), here are some observations and insights that can be m
 
 ## <a name="nb"></a>Jupyter Notebook
 
-For this project, I used jupyter notebook to render and display the results of this analysis. There are two notebook files. One for part 1 (WeatherPy) and another for part 2 (VacationPy) of this project.
+For this project, I used jupyter notebook to render and display the results of this analysis. There are two notebook files. One for part one (WeatherPy) and another for part two (VacationPy) of this project.
 
 * [WeatherPy](./WeatherPy/WeatherPy.ipynb)
 * [VacationPy](./VacationPy/VacationPy.ipynb)
