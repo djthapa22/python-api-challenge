@@ -7,6 +7,7 @@ Data analysis of world weather data to better understand and explain what the we
 * [Jupyter Notebook](#nb)
 * [Images](#images)
 * [Technologies Used](#technologies)
+* [API Keys](#api_keys)
 
 ## <a name="background"></a>Background
 
@@ -77,7 +78,27 @@ For this project, I used jupyter notebook to render and display the results of t
 * Pandas library
 * Jupyter Notebook
 * Matplotlib library
-* Citipy
+* Citipy (will need to be installed in your anaconda environment)
 * OpenWeatherMap API
 * Google Places API
 * jupyter-gmaps
+
+## <a name="api_keys"></a> API Keys
+
+To run these jupyter notebooks locally, you will need to obtain API keys.
+
+For part one, you will need to obtain an API key for the OpenWeatherMap API, which can be obtained [here](https://home.openweathermap.org/api_keys).
+
+After you have the OpenWeatherMap API key, create a file called **config.py** in the **WeatherPy** folder and add the API key to that file:
+
+```bash
+weather_api_key="API_KEY_HERE"
+```
+
+For part two, you wll need to obtain a Google API key from the Google Cloud Platform at <https://cloud.google.com> and enable the **Places API**.
+
+After you have the Google API key, create a file called **config.py** in the **VacationPy** folder and add the API key to that file:
+
+```bash
+g_key="API_KEY_HERE"
+```
