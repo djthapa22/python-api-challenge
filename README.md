@@ -11,7 +11,7 @@ Data analysis of world weather data to better understand and explain what the we
 
 ## <a name="background"></a>Background
 
-For this project and using what I know about Python requests, APIs, and JSON traversals, I am trying to answer the following fundamental question: What's the weather like as we approach the equator? We already knows it gets hotter, but the goal is to analyze weather data to explain why it gets hotter.
+For this project, I used what I know about Python requests, APIs, and JSON traversals to try to answer the following fundamental question: What's the weather like as we approach the equator? We already knows it gets hotter, but the goal is to analyze weather data to explain why it gets hotter.
 
 There are two parts to this project. The different folders inside this repository correspond to the two parts.
 
