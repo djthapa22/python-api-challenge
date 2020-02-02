@@ -11,13 +11,13 @@ Data analysis of world weather data to better understand and explain what the we
 
 ## <a name="background"></a>Background
 
-For this project, I am trying to answer the following fundamental question: What's the weather like as we approach the equator? We already knows it gets hotter, but the goal is to analyze weather data to explain why it gets hotter.
+For this project and using what I know about Python requests, APIs, and JSON traversals, I am trying to answer the following fundamental question: What's the weather like as we approach the equator? We already knows it gets hotter, but the goal is to analyze weather data to explain why it gets hotter.
 
 There are two parts to this project. The different folders inside this repository correspond to the two parts.
 
 ### WeatherPy
 
-For the first part of this project (WeatherPy), I created a Python script to visualize the weather of 500+ cities across the world of varying distances from the equator. Using the numpy package, I generated a random set of at least 500 latitude and longitude coordinates and used a package called Citipy to identify the nearest city for each latitude and longitude pair. I then made API calls to the OpenWeatherMap API to get weather data for each of the cities. After the API calls were complete, I saved the retrieved data to a csv file, which can be found [here](./WeatherPy/output_data).
+For the first part of this project (**WeatherPy**), I created a Python script to visualize the weather of 500+ cities across the world of varying distances from the equator. Using the numpy package, I generated a random set of at least 500 latitude and longitude coordinates and used a package called Citipy to identify the nearest city for each latitude and longitude pair. I then made API calls to the OpenWeatherMap API to get weather data for each of the cities. After the API calls were complete, I saved the retrieved data to a csv file, which can be found [here](./WeatherPy/output_data).
 
 Using the data I received from the OpenWeatherMap API, I built a series of scatter plots to visualize the following relationships:
 
@@ -43,7 +43,7 @@ After each plot, I included a small explanation of what the linear regression is
 
 ### VacationPy
 
-For the second part of this project (VacationPy), I used the weather data gathered from part one to help plan for future vacations. Specifically, I used jupyter-gmaps and the Google Places API to create a heatmap that displays the humidity for every city from part one. I then narrowed down the list of cities to find the ideal weather conditions, including:
+For the second part of this project (**VacationPy**), I used the weather data gathered from part one to help plan for future vacations. Specifically, I used jupyter-gmaps and the Google Places API to create a heatmap that displays the humidity for every city from part one. I then narrowed down the list of cities to find the ideal weather conditions, including:
 
 * A max temperature lower than 80 degrees but higher than 70.
 * Wind speed less than 10 mph.
@@ -57,9 +57,11 @@ I then used the Google Places API to find the first hotel for each city located 
 
 From part one (WeatherPy), here are some observations and insights that can be made from the data:
 
-* There is a strong, negative correlation between a city's latitude and maximum temperature in the northern hemisphere. That is, as you go farther away from the equator (latitude increases), a city's maximum temperature will generally be lower than cities closer to the equator in the northern hemisphere.
+* There is a strong, negative correlation between a city's latitude and maximum temperature in the northern hemisphere. That is, as you go farther away from the equator (latitude increases), a city's maximum temperature will generally be lower than cities closer to the equator in the northern hemisphere. This is what I expected to see - for example, it's a lot colder in Minnesota (farther north) than it is in Mexico.
+
 * There is a very weak, positive correlation between cloudiness and a city's latitude for both the northern and southern hemispheres. This is represented in the scatter plots in this notebook for those two factors as the data points being scattered across the graph. As a result, we can conclude that a city's latitude has little to no influence on how cloudy a city is.
-* There is a very weak, positive correlation for the northern hemisphere between a city's latitude and wind speed (mph), and there is a very weak, negative correlation for the southern hemisphere for those same two factors. As a result, latitude has a small influence on wind speed but not very much. However, it is important to note that the correlation between these two factors for the southern hemisphere is stronger than the correlation between these two factors for the northern hemisphere.
+
+* There is a very weak, positive correlation for the northern hemisphere between a city's latitude and wind speed (mph), and there is a very weak, negative correlation for the southern hemisphere for those same two factors. I think the fact that the southern hemisphere has a negative correlation and the northern hemisphere has a positive correlation has to have something to do with the northern hemisphere and southern hemisphere being in opposite seasons from each other. Overall, for both hemispheres, latitude has a small influence on wind speed but not very much. However, it is important to note that the correlation between these two factors for the southern hemisphere is stronger than the correlation between these two factors for the northern hemisphere.
 
 ## <a name="nb"></a>Jupyter Notebook
 
